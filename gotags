@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if [ ! -d "$GOPATH" ]; then
+	echo GOPATH not set to a valid directory
+	exit 1
+fi
+
+find $GOROOT/src/pkg $GOPATH/src -name '*.go' \
+	| ctags -L - -f $GOPATH/tags 2>/dev/null
