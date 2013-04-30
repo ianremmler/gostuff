@@ -5,5 +5,4 @@ if [ ! -d "$GOPATH" ]; then
 	exit 1
 fi
 
-find $GOROOT/src/pkg $GOPATH/src -name '*.go' \
-	| ctags --extra=fq -L - -f $GOPATH/tags 2>/dev/null
+find $GOROOT/src/pkg $GOPATH/src -name '*.go' | ctags --totals --extra=fq -L - -f $GOPATH/tags
