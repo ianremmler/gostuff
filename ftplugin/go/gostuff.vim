@@ -1,7 +1,6 @@
 let &l:tags = &tags . "," . $GOPATH . "/tags"
 
 setlocal commentstring=//\ %s makeprg=go tabstop=4 shiftwidth=4
-setlocal errorformat+=gotest:\ parse\ error:\ %f:%l:%c:\ %m
 
 noremap <silent> <LocalLeader>gd :Godoc <C-R><C-A><cr>
 noremap <silent> <LocalLeader>gf :Fmt<cr>
