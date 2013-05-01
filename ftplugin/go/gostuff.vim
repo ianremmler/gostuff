@@ -1,6 +1,6 @@
 let &l:tags = &tags . "," . $GOPATH . "/tags"
 
-setlocal commentstring=//\ %s makeprg=go tabstop=4 shiftwidth=4
+setlocal makeprg=go tabstop=4 shiftwidth=4
 
 noremap <LocalLeader>go :make 
 
