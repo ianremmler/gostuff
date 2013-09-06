@@ -19,7 +19,7 @@ command! -buffer GoVetDir :call s:GoVet('./...')
 
 noremap <LocalLeader>go :make 
 
-noremap <silent> <LocalLeader>gd :Godoc <C-R><C-A><cr>
+noremap <silent> <LocalLeader>gd :Godoc<cr>
 noremap <silent> <LocalLeader>gf :Fmt<cr>
 noremap <silent> <LocalLeader>gr :make run %<cr>
 noremap <silent> <LocalLeader>g] :tag <C-R><C-A><cr>
