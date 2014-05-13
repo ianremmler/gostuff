@@ -1,7 +1,5 @@
 setlocal tabstop=4 shiftwidth=4 makeprg=go
 
-let g:go_auto_type_info = 0
-
 noremap <silent> <LocalLeader>gl :GoLint<cr>
 noremap <silent> <LocalLeader>gd :GoDoc<cr>
 noremap <silent> <LocalLeader>gw :GoDocBrowser<cr>
