@@ -1,3 +1,0 @@
-#!/bin/sh
-
-vim "+set tags+=$GOPATH/tags" "+tag $@"
