@@ -18,3 +18,4 @@ noremap <silent> <LocalLeader>goC :GoOracleCallees<cr>
 noremap <silent> <LocalLeader>gog :GoOracleCallgraph<cr>
 noremap <silent> <LocalLeader>goi :GoOracleImplements<cr>
 noremap <silent> <LocalLeader>gop :GoOracleChannelPeers<cr>
+noremap <silent> <LocalLeader>gs :SyntasticCheck<cr>
