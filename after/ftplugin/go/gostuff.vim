@@ -1,21 +1,26 @@
 setlocal tabstop=4 shiftwidth=4 makeprg=go
 
-noremap <silent> <LocalLeader>gl :GoLint<cr>
-noremap <silent> <LocalLeader>gd :GoDoc<cr>
-noremap <silent> <LocalLeader>gw :GoDocBrowser<cr>
-noremap <silent> <LocalLeader>gf :GoFmt<cr>
-noremap <silent> <LocalLeader>gv :GoVet<cr>
-noremap <silent> <LocalLeader>g] :GoDef<cr>
-noremap <silent> <LocalLeader>gr :GoRun<cr>
-noremap <silent> <LocalLeader>gb :GoBuild<cr>
-noremap <silent> <LocalLeader>gi :GoInstall<cr>
-noremap <silent> <LocalLeader>gt :GoTest<cr>
-noremap <silent> <LocalLeader>ge :GoErrCheck<cr>
-noremap <silent> <LocalLeader>gn :GoInfo<cr>
-noremap <silent> <LocalLeader>god :GoOracleDescribe<cr>
-noremap <silent> <LocalLeader>goc :GoOracleCallers<cr>
-noremap <silent> <LocalLeader>goC :GoOracleCallees<cr>
-noremap <silent> <LocalLeader>gog :GoOracleCallgraph<cr>
-noremap <silent> <LocalLeader>goi :GoOracleImplements<cr>
-noremap <silent> <LocalLeader>gop :GoOracleChannelPeers<cr>
-noremap <silent> <LocalLeader>gs :SyntasticCheck<cr>
+nmap <LocalLeader>gr <Plug>(go-run)
+nmap <LocalLeader>gb <Plug>(go-build)
+nmap <LocalLeader>gg <Plug>(go-generate)
+nmap <LocalLeader>gn <Plug>(go-info)
+nmap <LocalLeader>gi <Plug>(go-install)
+nmap <LocalLeader>gt <Plug>(go-test)
+nmap <LocalLeader>gT <Plug>(go-test-func)
+nmap <LocalLeader>gc <Plug>(go-coverage)
+nmap <LocalLeader>gC <Plug>(go-coverage-clear)
+nmap <LocalLeader>gv <Plug>(go-vet)
+nmap <LocalLeader>gp <Plug>(go-deps)
+nmap <LocalLeader>gd <Plug>(go-doc)
+nmap <LocalLeader>gD <Plug>(go-doc-browser)
+nmap <LocalLeader>g] <Plug>(go-def)
+nmap <LocalLeader>gI <Plug>(go-implements)
+nmap <LocalLeader>gR <Plug>(go-rename)
+nmap <LocalLeader>guC <Plug>(go-callees)
+nmap <LocalLeader>guc <Plug>(go-callers)
+nmap <LocalLeader>gud <Plug>(go-describe)
+nmap <LocalLeader>gus <Plug>(go-callstack)
+nmap <LocalLeader>guf <Plug>(go-freevars)
+nmap <LocalLeader>gup <Plug>(go-channelpeers)
+nmap <LocalLeader>gur <Plug>(go-referrers)
+nmap <LocalLeader>gl <Plug>(go-metalinter)
